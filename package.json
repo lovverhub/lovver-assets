@@ -1,10 +1,10 @@
 {
   "name": "@lovverhub/assets",
-  "private": true,
+  "version": "1.0.0",
   "description": "🎨 Collection assets for LovverHub",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lovverhub/lovver-assets.git"
+    "url": "git+https://github.com/lovverhub/lovver-assets.git"
   },
   "license": "MIT",
   "author": "LovverHub <contact@lovver.us>",
@@ -21,7 +21,7 @@
     "lint-staged": "lint-staged",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ",
     "prepare": "husky",
-    "prettier": "prettier -c --write --no-error-on-unmatched-pattern \"**/**\"",
+    "format": "prettier -c --write --no-error-on-unmatched-pattern \"**/**\"",
     "test": "bun test",
     "tsc": "tsc -p tsconfig-check.json"
   },
@@ -30,37 +30,18 @@
       "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "bun lint:fix"
+      "prettier --parser=typescript --write"
     ]
   },
   "devDependencies": {
     "@commitlint/cli": "^18",
     "@types/bun": "latest",
-    "@typescript-eslint/eslint-plugin": "^7",
-    "@typescript-eslint/parser": "^7",
-    "@umijs/babel-preset-umi": "^4",
-    "@umijs/lint": "^4.1.10",
     "commitlint": "^18",
-    "eslint": "^8",
-    "eslint-config-prettier": "^9",
-    "eslint-import-resolver-alias": "^1",
-    "eslint-import-resolver-typescript": "^3",
-    "eslint-plugin-import": "^2",
-    "eslint-plugin-react": "^7",
-    "eslint-plugin-react-hooks": "^4",
-    "eslint-plugin-simple-import-sort": "^12",
-    "eslint-plugin-sort-keys-fix": "^1",
-    "eslint-plugin-typescript-sort-keys": "^3",
-    "eslint-plugin-unicorn": "^52.0.0",
-    "eslint-plugin-unused-imports": "^3",
     "husky": "^8",
     "lerna": "^8.1.2",
     "lint-staged": "^15",
-    "pathe": "^1.1.2",
     "prettier": "^3.2.5",
-    "sharp": "^0.33.3",
-    "svgo": "^3.2.0"
+    "semantic-release": "^23.0.8"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -71,5 +52,8 @@
   },
   "gitmoji": {
     "capitalizeTitle": false
+  },
+  "dependencies": {
+    "@lovverhub/config": "^1.0.1"
   }
 }
