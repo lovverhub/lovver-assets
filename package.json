@@ -1,6 +1,6 @@
 {
   "name": "@lovverhub/assets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🎨 Collection assets for LovverHub",
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18",
     "@types/bun": "latest",
+    "@lovverhub/config": "^1.0.1",
     "commitlint": "^18",
     "husky": "^8",
     "lerna": "^8.1.2",
@@ -52,8 +53,5 @@
   },
   "gitmoji": {
     "capitalizeTitle": false
-  },
-  "dependencies": {
-    "@lovverhub/config": "^1.0.1"
   }
 }
